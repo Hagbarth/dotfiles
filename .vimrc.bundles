@@ -1,0 +1,8 @@
+Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plugin 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plugin 'mxw/vim-jsx'
+Plugin 'flowtype/vim-flow', { 'do': 'npm install -g flow-bin' }
+Plugin 'scrooloose/nerdtree'
+Plugin 'dracula/vim'
+Plugin 'jparise/vim-graphql'
+Plugin 'pangloss/vim-javascript'
