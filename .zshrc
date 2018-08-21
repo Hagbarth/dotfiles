@@ -22,7 +22,6 @@ bindkey '^R' history-incremental-search-backward
 
 # Node
 npm config delete prefix
-source ~/.nvm/nvm.sh
 
 # Setup oh-my-zsh
 export ZSH=/Users/hagbarth/.oh-my-zsh
@@ -37,3 +36,8 @@ PURE_PROMPT_SYMBOL="🦄 - ❯"
 autoload -U promptinit; promptinit
 prompt pure
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/hagbarth/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/hagbarth/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/hagbarth/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/hagbarth/google-cloud-sdk/completion.zsh.inc'; fi
