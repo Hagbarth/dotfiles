@@ -1,0 +1,1 @@
+kubectl get po -l app=$1 | awk 'NR>1 {print $1}' | xargs -I '{}' kubectl port-forward '{}' $2
