@@ -1,0 +1,4 @@
+#! /bin/bash
+
+open -a  /Applications/Firefox\ Developer\ Edition.app/ https://gitlab.com/pentoapp/Pento/merge_requests/$1
+
