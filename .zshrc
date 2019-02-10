@@ -36,6 +36,9 @@ PURE_PROMPT_SYMBOL="🦄 - ❯"
 autoload -U promptinit; promptinit
 prompt pure
 
+# Install scripts
+cp ~/.dotfiles/scripts/* /usr/local/bin
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/hagbarth/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/hagbarth/google-cloud-sdk/path.zsh.inc'; fi
 
