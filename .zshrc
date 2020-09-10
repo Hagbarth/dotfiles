@@ -5,6 +5,7 @@ source '/Users/hagbarth/google-cloud-sdk/path.zsh.inc'
 source '/Users/hagbarth/google-cloud-sdk/completion.zsh.inc'
 
 alias pentodev="cd /Users/hagbarth/Developer/Go/src/gitlab.com/pentoapp/"
+export GCLOUD_CONFIG=$HOME/.config/gcloud
 
 # Setup Kubernetes
 export KUBE_EDITOR=vim
@@ -15,6 +16,8 @@ alias kfun="k config use-context gke_pentoapp_europe-west1-c_eu-fun"
 
 # Go
 export GOPATH='/Users/hagbarth/Developer/Go'
+export GOROOT='/usr/local/go'
+export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$(go env GOPATH)/bin
 
 bindkey -v
@@ -44,3 +47,5 @@ if [ -f '/Users/hagbarth/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/h
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/hagbarth/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/hagbarth/google-cloud-sdk/completion.zsh.inc'; fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

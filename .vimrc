@@ -46,3 +46,4 @@ set showmatch " highlight matching [{()}]
 set incsearch " search as characters are entered
 set hlsearch " highlight matches
 let NERDTreeShowHidden=1
+let g:go_fmt_command = "goimports"
